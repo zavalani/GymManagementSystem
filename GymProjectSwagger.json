@@ -1,0 +1,682 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "GymManagementAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Discounts": {
+      "post": {
+        "tags": [
+          "Discounts"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Discounts/{Id}": {
+      "put": {
+        "tags": [
+          "Discounts"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Discounts"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Discounts"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Discounts/code": {
+      "get": {
+        "tags": [
+          "Discounts"
+        ],
+        "parameters": [
+          {
+            "name": "code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Member_Subscriptions": {
+      "post": {
+        "tags": [
+          "Member_Subscriptions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Member_Subscriptions/{Id}": {
+      "put": {
+        "tags": [
+          "Member_Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Member_Subscriptions"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Member_Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Member_Subscriptions/GetBymemberID": {
+      "get": {
+        "tags": [
+          "Member_Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Member_Subscriptions/{id}": {
+      "get": {
+        "tags": [
+          "Member_Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Members": {
+      "post": {
+        "tags": [
+          "Members"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Members/{Id}": {
+      "put": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Members"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Members/filter": {
+      "get": {
+        "tags": [
+          "Members"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions": {
+      "post": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/{Id}": {
+      "put": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Subscriptions"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "Id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Subscriptions/filter": {
+      "get": {
+        "tags": [
+          "Subscriptions"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Discounts": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Member_Subscriptions": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "membersId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "members": {
+            "$ref": "#/components/schemas/Members"
+          },
+          "subscriptionsId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "subscriptions": {
+            "$ref": "#/components/schemas/Subscriptions"
+          },
+          "originalPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "discountValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "paidPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "remainingSessions": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Members": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastName": {
+            "type": "string",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idCardNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "registrationDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Subscriptions": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "code": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "numOfMonths": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "weekFrequency": {
+            "$ref": "#/components/schemas/WeekFrequency"
+          },
+          "totalNumSessions": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "totalPrice": {
+            "type": "number",
+            "format": "double"
+          },
+          "isDeleted": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeekFrequency": {
+        "enum": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "type": "integer",
+        "format": "int32"
+      }
+    }
+  }
+}
