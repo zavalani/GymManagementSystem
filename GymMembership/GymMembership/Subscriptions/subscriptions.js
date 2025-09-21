@@ -7,7 +7,7 @@ $(document).ready(function () {
     console.log("HELLO");
     function displayOutput(result){
         let tableData = '';
-        $('#message').html("<h3>Subscriptions retrieved successfully:</h3>");
+        $('#message').html("<h1>Subscriptions retrieved successfully:</h1>");
         let message=`
         <table id="data-table" class="table table-bordered table-striped">
             <thead>

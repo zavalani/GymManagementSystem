@@ -216,6 +216,18 @@ select {
     box-sizing: border-box;
 }
 
+input[type="search"] {
+    width: 220px;      /* Reduced width */
+    padding: 7px 10px; /* Slightly smaller padding */
+    font-size: 0.98em; /* Slightly smaller font */
+    margin-right: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+
 input:focus, select:focus {
     border: 1.5px solid #333;
     outline: none;
