@@ -160,37 +160,6 @@ $(document).ready(function () {
     });
 
     
-    // $('#updateSubscriptionForm').on('submit', function(event) {
-    //     event.preventDefault(); // Prevent default form submission
-    //     // Get the updated data from the form
-    //     const updatedSubscriptionData = {
-    //         id: $('#idUpdate').val(),
-    //         code: $('#codeUpdate').val(),
-    //         description: $('#descriptionUpdate').val(),
-    //         numberOfMonths: parseInt($('#numberOfMonthsUpdate').val()),
-    //         weekFrequency: parseInt($('#weekFrequencyUpdate').val()),
-    //         totalNumberOfSessions: parseInt($('#totalNumberOfSessionsUpdate').val()),
-    //         totalPrice : parseFloat($('#totalPriceUpdate').val()),
-    //         isDeleted: $('#isDeletedUpdate').prop('checked')
-    //     };
-    //     // Send the updated data to the server
-    //     $.ajax({
-    //         url: `${apiUrl}/${updatedSubscritpionData.id}`,
-    //         method: 'PUT',
-    //         contentType: 'application/json',
-    //         data: JSON.stringify(updatedSubscriptionData),
-    //         success: function() {
-    //             alert("Subscription updated successfully!");
-    //             window.location.replace(`subscriptions.html`);
-    //         },
-    //         error: function(error) {
-    //             console.error("Error updating member data:", error);
-    //             alert("There was an error updating the member.");
-    //         }
-    //     });
-    // });
-
-    
     
        window.deleteSubscription= function(subscriptionId) {
             console.log(subscriptionId);
@@ -208,4 +177,9 @@ $(document).ready(function () {
         }
 
         $('#getSubscriptionsBtn').on('click', getSubscriptions);
-    });
+
+    // Only auto-load subscriptions if on the subscriptions list page
+    if (window.location.pathname.endsWith('/Subscriptions/subscriptions.html')) {
+        getSubscriptions();
+    }
+});

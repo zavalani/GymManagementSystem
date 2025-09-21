@@ -203,4 +203,9 @@ $(document).ready(function () {
     
 
     $('#getMembersBtn').on('click', getMembers);
+
+    // Only auto-load members if on the members list page
+    if (window.location.pathname.endsWith('members.html')) {
+        getMembers();
+    }
 });

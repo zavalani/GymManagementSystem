@@ -231,6 +231,11 @@ $(document).ready(function () {
     $('#registerSubscriberLink').on('click', callDropDownsAPI);
     callDropDownsAPI();
 
+    // Only auto-load subscribers if on the subscribers list page
+    if (window.location.pathname.endsWith('/MemberSubscriptions/memberSubscriptions.html')) {
+        getSubscribers();
+    }
+
     // $('#addMembersBtn').on('click', addMembers);
     // $('#updateMembersBtn').on('click', updateMember);
     // $('#deleteMembersBtn').on('click', deleteMember);

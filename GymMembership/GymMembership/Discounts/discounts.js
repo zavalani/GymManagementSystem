@@ -194,7 +194,10 @@ $(document).ready(function () {
         console.log("Test");
     }
 
-    
+    // Only auto-load discounts if on the discounts list page
+    if (window.location.pathname.endsWith('/Discounts/discounts.html')) {
+        getDiscounts();
+    }
 
     $('#getDiscountsBtn').on('click', getDiscounts);
     // $('#addMembersBtn').on('click', addMembers);
